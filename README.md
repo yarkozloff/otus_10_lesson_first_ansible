@@ -86,8 +86,8 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
-Машина поднялась командой vagrant up, по vagrant ssh есть доступ. Теперь, чтобы каждый раз явно указывать инвентори
-файл и вписывать в него много информации, сразу создаем inventory файл в каталоге staging/hosts с нужными параметрами (убрав информацию о пользователе):
+## Ansible
+Машина поднялась командой vagrant up, по vagrant ssh есть доступ. Теперь, чтобы каждый раз явно указывать инвентори файл и вписывать в него много информации, сразу создаем inventory файл в каталоге staging/hosts с нужными параметрами (убрав информацию о пользователе):
 ```
 [web]
 nginx ansible_host=127.0.0.1 ansible_port=2222 ansible_private_key_file=.vagrant/machines/nginx/virtualbox/private_key
